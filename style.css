@@ -17,7 +17,7 @@ body
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    background: transparent;
+    background: #051430;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -185,6 +185,7 @@ body
 .home img:hover
 {
     box-shadow: 0 0 100px #0ef;
+    cursor: pointer;
 }
 .about-img img:hover
 {
@@ -274,21 +275,39 @@ body
     box-shadow: 0 0 5px cyan, 0 0 25px cyan,0 0 30px cyan;
 }
 
+
+
+
+
+
 @media only screen and (max-width: 768px) {
     /* Adjustments for tablets */
-    .header {
+    .header 
+    {
         padding: 15px 5%;
     }
-    .navbar a {
+    .navbar a 
+    {
         margin-left: 15px;
         font-size: 18px;
     }
-    /* Add more styles for tablets here */
+    .home
+    {
+        height: 750px;
+    }
+    .home img
+    {
+        width: 300px;
+    }
+    .home-container h1
+    {
+        font-size: 40px;
+    }
 }
 
-/* For devices with a maximum width of 600px (Small tablets and large smartphones) */
-@media only screen and (max-width: 768px) {
-    /* Adjustments for small tablets and large smartphones */
+
+
+@media only screen and (max-width: 600px) {
     .header {
         padding: 15px 5%;
     }
@@ -306,7 +325,8 @@ body
     {
         font-size: 40px;
     }
-    .navbar a {
+    .navbar a 
+    {
         margin-left: 15px;
         font-size: 18px;
     }
@@ -318,11 +338,11 @@ body
     {
         font-size: 20px;
     }
-    /* Add more styles for this size range here */
 }
 @media only screen and (max-width: 320px) {
     /* Adjustments for small tablets and large smartphones */
-    .header {
+    .header 
+    {
         padding: 15px 5%;
     }
     .home img 
@@ -389,13 +409,12 @@ body
     }
     .about
     {
-        height: 600px;
+        height: 120vh;
         flex: none;
     }
     .about-img
     {
         width: 150px;
     }
-    /* Add more styles for this size range here */
 }
 
